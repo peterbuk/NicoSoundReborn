@@ -90,9 +90,9 @@ namespace NicoSoundReborn
                 txtBoxArtist.Enabled = false;
                 txtBoxAlbum.Enabled = false;
 
-                txtBoxFileName.Text = "(default from video)";
-                txtBoxTitle.Text = "(default from video)";
-                txtBoxArtist.Text = "(default from video)";
+                txtBoxFileName.Text = "(parse from video)";
+                txtBoxTitle.Text = "(parse from video)";
+                txtBoxArtist.Text = "(parse from video)";
                 txtBoxAlbum.Text = "Nico Nico Douga Music";
             }
             else if (chkBoxDefault.Checked == false)
@@ -200,7 +200,7 @@ namespace NicoSoundReborn
                                     "-metadata title=\"" + txtBoxTitle.Text +
                                     "\" -metadata artist=\"" + txtBoxArtist.Text +
                                     "\" -metadata album=\"" + txtBoxAlbum.Text +
-                                    "\" " + txtBoxFileName.Text;
+                                    "\" \"" + txtBoxFileName.Text + "\"";
             p.Start();
             p.WaitForExit();
 

@@ -82,7 +82,7 @@
             this.txtBoxFileName.Name = "txtBoxFileName";
             this.txtBoxFileName.Size = new System.Drawing.Size(174, 20);
             this.txtBoxFileName.TabIndex = 3;
-            this.txtBoxFileName.Text = "(default from video)";
+            this.txtBoxFileName.Text = "(parse from video)";
             // 
             // btnDownload
             // 
@@ -155,7 +155,7 @@
             this.txtBoxArtist.Name = "txtBoxArtist";
             this.txtBoxArtist.Size = new System.Drawing.Size(174, 20);
             this.txtBoxArtist.TabIndex = 8;
-            this.txtBoxArtist.Text = "(default from video)";
+            this.txtBoxArtist.Text = "(parse from video)";
             // 
             // txtBoxTitle
             // 
@@ -164,7 +164,7 @@
             this.txtBoxTitle.Name = "txtBoxTitle";
             this.txtBoxTitle.Size = new System.Drawing.Size(174, 20);
             this.txtBoxTitle.TabIndex = 7;
-            this.txtBoxTitle.Text = "(default from video)";
+            this.txtBoxTitle.Text = "(parse from video)";
             // 
             // lblPromptAlbum
             // 
