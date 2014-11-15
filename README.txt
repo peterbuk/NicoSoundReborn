@@ -1,21 +1,19 @@
 Nico Sound Reborn
-Version 1.1
-Author: Eternith
+Version 1.2
+Author: Peter Buk
 -----------------
 
 This small utility lets you rip an MP3 track from a given NicoNicoDouga link.
 
-Just run NicoSoundReborn.exe and follow the prompts to insert a NND URL 
-and the file name for the resulting mp3 track (default will be song.mp3).
+Just run NicoSoundReborn.exe and fill in the text boxes with the appropriate fields.
 
 Current issues:
-- Does not check for valid URL.
-- No MP3 tagging or automatic file naming from source
-- Only tested with NND, although one of the utilities should work with other vid sites.
+- The tag automatic parsing is currently very basic and only uses the video name for all tags.
+- Current implementation is just a GUI wrapper for a script. Will need to redirect progress output better.
 - Really big file size due to necessary components.
-
-But it works! (RIP Nicosound)
 
 Open source components:
 https://www.ffmpeg.org/
 http://rg3.github.io/youtube-dl/
+
+RIP Nicosound.

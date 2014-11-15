@@ -20,8 +20,8 @@ using System.IO;
  * 
  * TO DO:
  * - checkbox to keep mp4 file
- * - check valid url
  * - hide cmd window, redirect output to GUI
+ * - better tag parsing
  */
 
 namespace NicoSoundReborn
@@ -186,6 +186,8 @@ namespace NicoSoundReborn
                 else
                     if (!txtBoxFileName.Text.EndsWith(".mp3", true, null)) // did not have .mp3
                         txtBoxFileName.Text = txtBoxFileName.Text + ".mp3";
+
+                tagExtracted = true;
             }
 
             // rename mp4
@@ -208,6 +210,9 @@ namespace NicoSoundReborn
             p.WaitForExit();
 
             statusLabel.Text = "Complete!";
+
+            if (!tagExtracted)
+                statusLabel.Text = "Error: MP3 tags failed to extract. Placeholders used.";
         }
 
         /*
@@ -225,8 +230,6 @@ namespace NicoSoundReborn
                 return null;
         }
 
-
-        
 
     }
 }
